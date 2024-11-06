@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Day Diary</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            background: url('img/J4o.gif') no-repeat center center fixed;
+            background-size: cover;
+        }
+        .container {
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 10px;
+        }
+
+        section {
+            background-color: rgba(255, 255, 255, 0.9); /* Slightly more opaque for visibility */
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Uniqudesigns for each section */
+        #home {
+            border-left: 5px solid #007BFF; /* Blue left border */
+            background-color: rgba(235, 235, 255, 0.8); /* Light blue background */
+        }
+
+        #gallery {
+            border-left: 5px solid #28A745; /* Green left border */
+            background-color: rgba(235, 255, 235, 0.8); /* Light green background */
+        }
+
+        #about {
+            border-left: 5px solid #FFC107; /* Yellow left border */
+            background-color: rgba(255, 255, 235, 0.8); /* Light yellow background */
+        }
+
+        #contact {
+            border-left: 5px solid #DC3545; /* Red left border */
+            background-color: rgba(255, 235, 235, 0.8); /* Light red background */
+            text-align: center; /* Center the text in the contact section */
+        }
+
+        #contact form {
+            max-width: 600px; /* Set a maximum width for the form */
+            margin: 0 auto; /* Center the form horizontally */
+        }
+
+        #contact .form-control {
+            width: 100%; /* Make input fields full width */
+        }
+
+        #contact button {
+            margin-top: 10px; /* Add space above the button */
+        }
+
+        /* Adjust the logo size */
+        .navbar-brand img {
+            height: 100px; /* Make the logo 5x larger */
+        }
+
+        /* Increase font size for navigation links */
+        .navbar-nav .nav-link {
+            font-size: 1.5em; /* Increase font size of links */
+            text-decoration: none;
+        }
+
+        /* Change color on hover */
+        .navbar .nav-link:hover {
+            color: red;
+        }
+
+        /* Navbar layout adjustments */
+        .navbar-nav {
+            display: flex;
+            flex-direction: row;
+            gap: 15px;
+            list-style-type: none;
+            margin-left: auto;
+        }
+
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        p {
+            font-family: 'Merriweather', serif;
+            font-size: 1.1em;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        .gallery-img {
+            max-width: 30%;
+            height: auto;
+            margin: 5px;
+            display: inline-block;
+        }
+
+        h2 {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .gallery-item {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .row {
+            margin: 0;
+        }
+
+        .video-item {
+            text-align: center;
+            margin: 10px 0;
+        }
+
+        .video-frame {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#home">
+        <img src="img/pngegg.png" alt="Logo"> <!-- Enlarged logo image -->
+    </a>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+
+<div class="container">
+    <!-- Home Section -->
+    <section id="home" class="active">
+        <h1>Welcome to College Day Diary</h1>
+        <p>This website captures the spirit and memories of our College Day...</p>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery">
+        <h2>Gallery</h2>
+        <div class="row">
+            <div class="col-md-4 gallery-item">
+                <p>Opening Salvo</p>
+                <img src="img/IMG_20240919_101015.jpg" alt="Event 1 - 1" class="img-fluid gallery-img">
+                <img src="img/IMG_20240919_101105.jpg" alt="Event 1 - 2" class="img-fluid gallery-img">
+                <img src="img/IMG_20240919_103215.jpg" alt="Event 1 - 3" class="img-fluid gallery-img">
+            </div>
+            <div class="col-md-4 gallery-item">
+                <p>College Day</p>
+                <img src="img/IMG_20240919_101027.jpg" alt="Event 2 - 1" class="img-fluid gallery-img">
+                <img src="img/IMG_20240919_103635.jpg" alt="Event 2 - 2" class="img-fluid gallery-img">
+                <img src="img/IMG_20240919_103227.jpg" alt="Event 2 - 3" class="img-fluid gallery-img">
+            </div>
+            <div class="col-md-4 gallery-item">
+                <p>Admin-Faculty-Staff Night</p>
+                <img src="img/IMG_20240927_184242.jpg" alt="Event 3 - 1" class="img-fluid gallery-img">
+                <img src="img/Messenger_creation_B6C257CA-68B5-471E-8B75-E9E056199083.jpeg" alt="Event 3 - 2" class="img-fluid gallery-img">
+                <img src="img/received_1709911039788231.jpeg" alt="Event 3 - 3" class="img-fluid gallery-img">
+            </div>
+        </div>
+
+        <!-- Videos Section -->
+        <h2>Videos</h2>
+        <div class="row">
+            <div class="col-md-4 video-item">
+                <p>ACT Jingle Competition</p>
+                <video class="video-frame" controls>
+                    <source src="videos/Project_10-20_HD 720p_MEDIUM_FR30_(1).mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="col-md-4 video-item">
+                <p>Me and my friends listening to the founder's Message</p>
+                <video class="video-frame" controls>
+                    <source src="videos/Project_10-20(1)_SD 360p_MEDIUM_FR30.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="col-md-4 video-item">
+                <p>Me and my friends listening to the founder's Singing</p>
+                <video class="video-frame" controls>
+                    <source src="videos/Project_10-20(1)_SD 360p_MEDIUM_FR30_(1).mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="col-md-4 video-item">
+                <p>La Paroza Night</p>
+                <video class="video-frame" controls>
+                    <source src="videos/Project_10-20_HD 720p_MEDIUM_FR30.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About </h2>
+        <p>Learn more about our college and the events that brought us together...</p>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form>
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea class="form-control" id="message" rows="4" placeholder="Your message" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send</button>
+        </form>
+    </section>
+</div>
+
+<script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
